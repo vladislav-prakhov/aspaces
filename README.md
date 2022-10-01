@@ -1,2 +1,4 @@
 # aspaces
-Prototype of community-based application
+
+**Prototype of community-based application**
+
