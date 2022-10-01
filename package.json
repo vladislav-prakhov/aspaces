@@ -1,0 +1,12 @@
+{
+  "name": "aspaces",
+  "version": "0.0.1",
+  "description": "Prototype of community-based application",
+  "main": "index.js",
+  "repository": "git@github.com:vladislav-prakhov/aspaces.git",
+  "author": "Vladislav Prakhov <vladislav.prakhov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "create-react-app": "^5.0.1"
+  }
+}
