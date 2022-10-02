@@ -23,7 +23,7 @@ export const Flexbox: FC<IFlexbox & BoxProps> = ({ children, margin, padding, ..
     )
 }
 
-export const FlexboxColumn: FC<IFlexbox> = ({ children, margin, padding, ...props }) => {
+export const FlexboxColumn: FC<IFlexbox & BoxProps> = ({ children, margin, padding, ...props }) => {
     return (
         <Box
             sx={{
