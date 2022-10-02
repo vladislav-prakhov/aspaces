@@ -1,3 +1,55 @@
 .App {
   text-align: center;
+  background: #9a9a9a;
+  color: #333;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%
+}
+
+aside {
+  min-width: 220px;
+  background: #9a9a9a;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.content {
+  background: #fff;
+  border-radius: 30px 0 0 0;
+  height: 100%
+}
+
+header {
+  min-height: 50px;
+  background: #ddd;
+  margin-bottom: 24px;
+  border-radius: 0 0 0 30px;
+}
+
+.round-pic {
+  border-radius: 100%;
+  background: #37c232;
+  width: 28px;
+  height: 28px
+}
+
+.userbutton {
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.userbutton + .userbutton {
+  margin-top: 10px;
+}
+.red-userbutton {
+  background-color: rgb(253, 109, 109);
 }
