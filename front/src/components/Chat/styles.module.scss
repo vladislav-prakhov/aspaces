@@ -18,3 +18,32 @@
     background: #fff;
     padding: 0 24px;
 }
+
+$messageHeight: 30px;
+
+.messageRow {
+    display: flex;
+
+    .message {
+        background: #fff;
+        padding: 8px 16px;
+        border-radius: 16px;
+        min-height: $messageHeight;
+        line-height: $messageHeight;
+        width: max-content;
+        max-width: calc(100% - 96px);
+        text-align: left;
+    }
+
+    + .messageRow {
+        margin-top: 12px;
+    }
+
+    &.outgoing {
+        justify-content: right;
+
+        .message {
+            background: rgb(238, 242, 255);
+        }
+    }
+}

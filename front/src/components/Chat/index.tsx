@@ -1,18 +1,21 @@
 import { FC, ReactElement } from 'react'
 import { Flexbox, FlexboxColumn } from '../Box'
+import clsx from 'clsx'
 import styles from './styles.module.scss'
 
 interface IChatMessage {
     name: string
     text: string
-    isMine: boolean
+    isOutgoing?: boolean
 }
 
-export const Message: FC<IChatMessage> = ({ name, text, isMine }) => {
+export const Message: FC<IChatMessage> = ({ name, text, isOutgoing }) => {
     return (
-        <Flexbox height='30px'>
-            {text}
+        <div className={clsx(styles.messageRow, { [styles.outgoing]: Boolean(isOutgoing)})}>
+            <Flexbox className={styles.message}>
+            <span>{text}</span>
         </Flexbox>
+        </div>
     )
 }
 
@@ -28,9 +31,10 @@ export const ChatBox: FC<{ children?: ReactElement }> = ({ children }) => {
 export const MessagesBox: FC<{ children?: ReactElement }> = ({ children }) => {
     return (
         <FlexboxColumn className={styles.messagesBox}>
-            <Message name='Valdemar' text='Привет' isMine={false}  />
-            <Message name='Valdemar' text='Что делаешь?' isMine={false}  />
-            <Message name='Valdemar' text='Есть пару идей' isMine={false}  />
+            <Message name='Valdemar' text='Привет' />
+            <Message name='Valdemar' text='Что делаешь? Что делаешь? Что делаешь? Что делаешь? Что делаешь? Что делаешь? Что делаешь? Что делаешь? Что делаешь?' />
+            <Message name='Valdemar' text='Есть пару идей' />
+            <Message name='Valdemar' text='Привет. Я немного занят' isOutgoing  />
         </FlexboxColumn>
     )
 }
