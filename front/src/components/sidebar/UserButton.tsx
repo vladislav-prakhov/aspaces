@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Flexbox } from '../Box'
 import Badge from '@mui/material/Badge'
-import style from './style.module.css'
+import style from './style.module.scss'
 
 interface IUserButton {
     picture?: string
