@@ -1,0 +1,19 @@
+.roundPic {
+    border-radius: 100%;
+    background: #37c232;
+    width: 28px;
+    height: 28px
+  }
+  
+.userButton {
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.userButton + .userButton {
+  margin-top: 10px;
+}
+
+.redUserButton {
+  background-color: rgb(253, 109, 109);
+}
