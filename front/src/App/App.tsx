@@ -10,15 +10,15 @@ function App() {
           <UserButton name='user 2'/>
           <UserButton name='user 3'/>
         </aside>
-        <body>
+        <div className='content'>
             <header>
               header here
             </header>
-            <div className='content'>
+            <div className='content-body'>
               <h1>Aspaces Application</h1>
               <Button variant="text">Just click</Button>
             </div>
-        </body>
+        </div>
     </div>
   );
 }
