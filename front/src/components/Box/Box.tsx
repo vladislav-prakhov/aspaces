@@ -6,15 +6,19 @@ interface IFlexbox {
     children?: ReactNode
     margin?: StandardLonghandProperties['marginBlock']
     padding?: StandardLonghandProperties['paddingBlock']
+    width?: StandardLonghandProperties['width']
+    height?: StandardLonghandProperties['height']
 }
 
-export const Flexbox: FC<IFlexbox & BoxProps> = ({ children, margin, padding, ...props }) => {
+export const Flexbox: FC<IFlexbox & BoxProps> = ({ children, margin, padding, width, height, ...props }) => {
     return (
         <Box
             sx={{
                 display: 'flex',
                 margin,
                 padding,
+                width,
+                height,
             }}
             {...props}
         >
@@ -23,7 +27,7 @@ export const Flexbox: FC<IFlexbox & BoxProps> = ({ children, margin, padding, ..
     )
 }
 
-export const FlexboxColumn: FC<IFlexbox & BoxProps> = ({ children, margin, padding, ...props }) => {
+export const FlexboxColumn: FC<IFlexbox & BoxProps> = ({ children, margin, padding, width, height, ...props }) => {
     return (
         <Box
             sx={{
@@ -31,6 +35,8 @@ export const FlexboxColumn: FC<IFlexbox & BoxProps> = ({ children, margin, paddi
                 flexDirection: 'column',
                 margin,
                 padding,
+                width,
+                height,
             }}
             {...props}
         

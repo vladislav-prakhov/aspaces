@@ -1,6 +1,6 @@
 import './App.scss';
 import { Button } from '@mui/material'
-import { UserButton } from '../components';
+import { UserButton, ChatBox, FlexboxColumn } from '../components';
 
 function App() {
   return (
@@ -15,8 +15,10 @@ function App() {
               header here
             </header>
             <div className='content-body'>
-              <h1>Aspaces Application</h1>
-              <Button variant="text">Just click</Button>
+              <FlexboxColumn width='800px'>
+                <h1>Aspaces Application</h1>
+              </FlexboxColumn>
+              <ChatBox />
             </div>
         </div>
     </div>
