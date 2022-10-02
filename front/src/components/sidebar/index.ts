@@ -1,1 +1,1 @@
-export * from './UserBadge'
+export * from './UserButton'

@@ -8,7 +8,7 @@ function App() {
         <aside>
           <UserButton name='user 1'/>
           <UserButton name='user 2'/>
-          <UserButton name='user 3'/>
+          <UserButton name='user 3' unreadedMessages={4}/>
         </aside>
         <div className='content'>
             <header>
