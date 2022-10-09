@@ -34,15 +34,15 @@ export const MessagesBox: FC<{ children?: ReactElement }> = ({ children }) => {
             <Message name='Valdemar' text='Привет' />
             <Message name='Valdemar' text='Что делаешь? Что делаешь? Что делаешь? Что делаешь? Что делаешь? Что делаешь? Что делаешь? Что делаешь? Что делаешь?' />
             <Message name='Valdemar' text='Есть пару идей' />
-            <Message name='Valdemar' text='Привет. Я немного занят' isOutgoing  />
+            <Message name='Bronx' text='Привет. Я немного занят' isOutgoing  />
         </FlexboxColumn>
     )
 }
 
 export const InputBox: FC<{ children?: ReactElement }> = ({ children }) => {
     return (
-        <Flexbox height='48px' className={styles.inputBox}>
-            <span>Тут вводить сообщение</span>
+        <Flexbox className={styles.inputBox}>
+            <div className={styles.input} contentEditable />
         </Flexbox>
     )
 }

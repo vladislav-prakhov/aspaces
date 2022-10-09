@@ -2,6 +2,7 @@
     max-width: 800px;
     border-radius: 0 30px 0 0;
     height: 100%;
+    font-size: 14px;
     background: #cdcd;
     padding: 24px;
 }
@@ -16,7 +17,7 @@
 .inputBox {
     align-items: center;
     background: #fff;
-    padding: 0 24px;
+    padding: 8px 24px;
 }
 
 $messageHeight: 30px;
@@ -45,5 +46,33 @@ $messageHeight: 30px;
         .message {
             background: rgb(238, 242, 255);
         }
+    }
+}
+
+.input {
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    cursor: text;
+    text-align: left;
+    min-height: $messageHeight;
+    max-height: $messageHeight*4;
+    line-height: $messageHeight;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    border: 1px solid grey;
+    background-color: rgb(238, 242, 255);
+    padding: 0 20px;
+    border-radius: 6px;
+
+    &:hover {
+        border: 1px solid rgb(87, 100, 143);
+        background-color: #fff; 
+    }
+
+    &:focus-visible {
+        border: 1px solid rgb(87, 100, 143);
+        background-color: #fff;
+        outline: 0px;
     }
 }
